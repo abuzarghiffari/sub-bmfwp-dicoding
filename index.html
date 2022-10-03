@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <title>Bookshelves</title>
+</head>
+
+<body>
+  <header class="head_bar">
+    <h1 class="head_bar_title">bookshelves</h1>
+    <div class="search_section">
+      <form id="searchBook">
+        <input id="searchBookTitle" type="search" placeholder="Search a book...">
+        <button id="searchSubmit" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="asset/img/hero.png" alt="hero">
+      <section class="input_section">
+        <div class="header">
+          <h2 class="title">Create your book</h2>
+        </div>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Title</label>
+            <input id="inputBookTitle" type="text" placeholder="Harry Potter" required>
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Author</label>
+            <input id="inputBookAuthor" type="text" placeholder="J.K. Rowling" required>
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Year</label>
+            <input id="inputBookYear" type="number" placeholder="2001" required>
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Finished reading</label>
+            <input id="inputBookIsComplete" type="checkbox">
+          </div>
+          <button id="bookSubmit" type="submit">Create</button>
+        </form>
+      </section>
+    </section>
+
+    <section class="book_shelf">
+      <h2 class="title">Unfinished reading</h2>
+      <div id="incompleteBookshelfList" class="book_list">
+      </div>
+    </section>
+
+    <section class="book_shelf">
+      <h2 class="title">Finished reading</h2>
+      <div id="completeBookshelfList" class="book_list">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Copyright &copy; <script>document.write(new Date().getFullYear());</script> Abuzar Ghiffari <br>
+      Belajar Membuat Front-End Web untuk Pemula
+    </p>
+  </footer>
+
+  <script src="asset/js/data.js"></script>
+  <script src="asset/js/main.js"></script>
+  <script src="asset/js/script.js"></script>
+</body>
+</html>
